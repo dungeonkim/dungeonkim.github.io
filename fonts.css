@@ -1,0 +1,7 @@
+@font-face { 
+    font-family: asset_mtcg_ttf; 
+    font-style: normal; 
+    font-weight: normal; /* or 400 */ 
+    src: url("asset/mtcg.ttf"); 
+} 
+
