@@ -1,0 +1,13 @@
+@font-face { 
+    font-family: mtcg_ttf; 
+    font-style: normal; 
+    font-weight: normal; /* or 400 */ 
+    src: url("mtcg.ttf"); 
+} 
+
+@font-face { 
+    font-family: mtcg_ui_ttf; 
+    font-style: normal; 
+    font-weight: normal; /* or 400 */ 
+    src: url("mtcg_ui.ttf"); 
+} 
