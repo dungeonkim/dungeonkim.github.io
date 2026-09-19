@@ -1,5 +1,5 @@
 // FlatFast PWA Service Worker
-const CACHE_NAME = 'ff-pwa-palo2-1789792789835';
+const CACHE_NAME = 'ff-pwa-palo2-1789823826731';
 
 // Install event - activate worker immediately
 self.addEventListener('install', (event) => {
