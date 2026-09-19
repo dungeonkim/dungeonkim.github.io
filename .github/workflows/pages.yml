@@ -1,0 +1,38 @@
+name: Publish games
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node docs/build.test.mjs
+      - run: node docs/build.mjs
+      - name: Use the curated artifact for GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method PUT repos/${{ github.repository }}/pages -f build_type=workflow --silent
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - uses: actions/deploy-pages@v4
+        id: deployment

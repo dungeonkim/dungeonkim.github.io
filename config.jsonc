@@ -1,0 +1,15 @@
+{
+    "main": {
+        "title_kr": "dungeonkim's retro goods.",
+        "desc_kr": "게임크리에이터 김동건의 오래된 작업물을 소개합니다."
+    },
+    // enabled가 true인 게임만 소개 페이지와 웹 배포에 포함됩니다.
+    "games": {
+        "PALO2": {
+            "enabled": true,
+            "title_kr": "삭제되었수다!",
+            "main_image": "/assets/PALO2.png",
+            "desc_kr": "하이텔 게임제작동호회 100K 게임 공모전을 통해 공개된 2인 협동 슈팅 게임. <그라디우스>를 패러디한 <파로디우스다!>를 패러디한 <85되었수다!>를 패러디한 <삭제되었수다!>이다. 당시에는 DOS용 게임으로 100KB 용량의 1개 exe파일로 제작되었다."
+        }
+    }
+}
