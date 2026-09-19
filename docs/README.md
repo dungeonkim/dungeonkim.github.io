@@ -43,3 +43,6 @@ GitHub Pages는 `_site/`만 배포합니다. 문서, 지시문, 테스트, 설�
 사이트에서 제공하지 않습니다. 공개 Git 저장소에 커밋한 관리 문서는
 GitHub 소스 화면에서는 보이므로, 비밀 정보는 커밋하지 않습니다.
 `docs/directives/`는 Git에서도 제외합니다.
+
+저장소 Settings → Pages → Source는 `GitHub Actions`로 설정합니다.
+`Deploy from a branch`는 사이트 생성 단계를 건너뛰므로 사용하지 않습니다.
